@@ -1,7 +1,10 @@
-#kontainer {
+#container {
     display: block;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 
 .cat {
-    border: 1px slateblue dotted;
+    padding: 20px;
 }
+

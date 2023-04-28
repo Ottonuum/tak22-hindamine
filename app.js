@@ -1,8 +1,6 @@
 const heading = document.getElementsByTagName('h1')[0];
 const catsContainer = document.getElementById('container');
 
-heading.innerText = 'Gen ja kassid';
-
 fetch('https://catfact.ninja/breeds?limit=100')
 .then(res => res.json())
 .then(cats => {
@@ -14,7 +12,7 @@ fetch('https://catfact.ninja/breeds?limit=100')
         catDiv.classList.add('cat');
 
         catDiv.innerHTML = `
-            <div>${cat.breed}</div>
+            <div><strong>${cat.breed}</strong></div>
             <div>${cat.country}</div>
         `;
 
